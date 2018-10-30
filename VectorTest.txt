@@ -1,6 +1,6 @@
 RADIX 1 1 1 1
 IO i i i o 
-VNAME a b c out  
+VNAME 5 6 7 4  
 TDELAY Out_T_DLY 0 0 0 1 
 
 TUNIT ps
