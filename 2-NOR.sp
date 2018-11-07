@@ -12,7 +12,7 @@
 +cl = 0ff
 +slp = 0.1p
 +Out_T_DLY = 12.95
-+PRD = 10.12
++PRD = 11.37
 
 .global  Vdd
 .temp  25
@@ -22,12 +22,12 @@ V       1  0  DC  1V
 ***Vb      6  0  DC  0V
 ***Vc      7  0  DC  0V
 ***********Transistor Level Implementation
-Mp1   2  7  1  1  pmos    w='12*Lmin'  L=Lmin 
-Mp2   3  6  2  2  pmos    w='12*Lmin'  L=Lmin
-Mp3   4  5  3  3  pmos    w='12*Lmin'  L=Lmin 
-Mn4   4  5  0  0  nmos    w='2*Lmin'   L=Lmin
-Mn5   4  6  0  0  nmos    w='2*Lmin'   L=Lmin 
-Mn6   4  7  0  0  nmos    w='2*Lmin'   L=Lmin
+Mp1   2  7  1  1  pmos    w='6*Lmin'  L=Lmin 
+Mp2   3  6  2  2  pmos    w='6*Lmin'  L=Lmin
+Mp3   4  5  3  3  pmos    w='6*Lmin'  L=Lmin 
+Mn4   4  5  0  0  nmos    w='1*Lmin'   L=Lmin
+Mn5   4  6  0  0  nmos    w='1*Lmin'   L=Lmin 
+Mn6   4  7  0  0  nmos    w='1*Lmin'   L=Lmin
 ***************Cap****************************************************
 CL 4 0	cl 
 *** Capacitance of output node

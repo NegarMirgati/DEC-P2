@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
+.TITLE '** digital electronic circuits - ca2'
+ t_rise           t_fall           tpdr             tpdf              
+ tpd              highest_freq     temper           alter#            
+  4.816e-12        1.910e-11        3.308e-12        1.049e-11        
+  6.897e-12        4.181e+10         25.0000           1.0000         

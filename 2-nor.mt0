@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
+.TITLE '** digital electronic circuits - ca2'
+ tpdr             tpdf             tpd              avgpower          
+ pdp              temper           alter#            
+  2.371e-12        1.204e-11        7.204e-12        2.049e-07        
+  1.476e-18         25.0000           1.0000         
