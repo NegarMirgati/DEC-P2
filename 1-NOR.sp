@@ -4,10 +4,12 @@
 .prot
 .inc '45nm.pm'
 .unprot
+
 ********* Params*******
 .param  Lmin=45n
 +Vdd=  1V
 +cl =	0ff
+
 
 .global  Vdd
 .temp  25
@@ -27,11 +29,11 @@ Mn5   4  6  0  0  nmos    w='2*Lmin'   L=Lmin
 Mn6   4  7  0  0  nmos    w='2*Lmin'   L=Lmin
 
 ***************Cap****************************************************
-CL out 0	cl ** Capacitance of output node
+CL 4 0	cl ** Capacitance of output node
 
 
 *********Type of Analysis***
-.tran 1p 200n 1p
+.tran  0.1ns  20ns 
 
 .MEASURE TRAN t_rise
 + trig V(4) val = '0.1*Vdd'  rise = 1
@@ -52,9 +54,7 @@ CL out 0	cl ** Capacitance of output node
 
 .MEASURE TRAN tpd  param = '0.5 * (tpdr + tpdf)'
 
-
-
-
+.MEASURE highest_freq param = '1 /(t_rise + t_fall)'
 
 .op
 .END
